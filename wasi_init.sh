@@ -1,0 +1,2 @@
+#!/bin/sh
+C:\Program Files\CMake\bin\cmake.EXE -G Ninja -DCMAKE_BUILD_TYPE=Release -DBEAM_SHADER_SDK=c:/Data/Projects/Beam/shader-sdk -DCMAKE_TOOLCHAIN_FILE=c:/Data/Projects/Beam/shader-sdk/wasi-sdk-14.0/share/cmake/wasi-sdk.cmake -DCMAKE_SYSROOT=c:/Data/Projects/Beam/shader-sdk/wasi-sdk-14.0/share/wasi-sysroot -DWASI_SDK_PREFIX=c:/Data/Projects/Beam/shader-sdk/wasi-sdk-14.0 -DCMAKE_CXX_COMPILER_FORCED=True -DCMAKE_C_COMPILER_FORCED=True -Sc:/Data/Projects/Beam/get-public-key/ -Bc:/Data/Projects/Beam/get-public-key/build/wasi
