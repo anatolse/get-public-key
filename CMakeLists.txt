@@ -31,8 +31,7 @@ message(STATUS "CMAKE_SYSTEM_NAME=${CMAKE_SYSTEM_NAME}")
 include(ShaderTools)
 
 if(CMAKE_SYSTEM_NAME MATCHES "WASI")
-    #include(GenerateSID)
-
+    include(GenerateSID)
     include(ShaderLib)
 
     set(CMAKE_EXECUTABLE_SUFFIX .wasm)
