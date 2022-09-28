@@ -21,6 +21,7 @@ void ReturnPublicKey()
     auto p = std::make_unique<uint8_t[]>(size);
     Env::DocGetBlob("key_material", p.get(), size);
     PubKey pubKey;
+    Env::DocGroup root("");
     Env::DerivePk(pubKey, p.get(), size);
     Env::DocAddBlob_T("pub_key", pubKey);
 }
